@@ -33,115 +33,109 @@
     position:relative;
 }
 
-/*화면 너비 0 ~ 2200px*/
-@media (max-width: 2200px){
-    #line-wrapper {width: 30px;}
-    .line {width: 42px; height: 7px;}
-
-}
 
 
 .line-top {
-    animation:line-top .5s forwards ease-out,
-    line-top-rotate .3s .5s forwards ease-out;
+animation:line-top .5s forwards ease-out,
+line-top-rotate .3s .5s forwards ease-out;
 }
 
 .top-reverse {
-    animation:line-top-rotate-reverse .3s forwards ease-out,
-    line-top-reverse .5s .3s forwards ease-out;
+animation:line-top-rotate-reverse .3s forwards ease-out,
+line-top-reverse .5s .3s forwards ease-out;
 }
 
 .line-mid {
-    animation:line-mid .5s forwards ease-out;
+animation:line-mid .5s forwards ease-out;
 }
 
 .mid-reverse {
-    animation:line-mid-invisible .3s forwards ease-out,
-    line-mid-reverse .5s .3s forwards ease-out;
+animation:line-mid-invisible .3s forwards ease-out,
+line-mid-reverse .5s .3s forwards ease-out;
 }
 
 .line-bot {
-    animation:line-bot .5s forwards ease-out,
-    line-bot-rotate .3s .5s forwards ease-out;
+animation:line-bot .5s forwards ease-out,
+line-bot-rotate .3s .5s forwards ease-out;
 }
 
 .bot-reverse {
-    animation:line-bot-rotate-reverse .3s forwards ease-out,
-    line-bot-reverse .5s .3s forwards ease-out;
+animation:line-bot-rotate-reverse .3s forwards ease-out,
+line-bot-reverse .5s .3s forwards ease-out;
 }
 
 @keyframes line-top {
-    0% {transform:translateY(0px)}
-    100% {transform:translateY(13px)}
+0% {transform:translateY(0px)}
+100% {transform:translateY(13px)}
 }
 
 @keyframes line-top-reverse {
-    0% {transform:translateY(13px)}
-    100% {transform:translateY(0px)}
+0% {transform:translateY(13px)}
+100% {transform:translateY(0px)}
 }
 
 @keyframes line-top-rotate {
-    0% {transform:translateY(13px) rotateZ(0deg)}
-    100% {transform:translateY(13px) rotateZ(45deg)}
+0% {transform:translateY(13px) rotateZ(0deg)}
+100% {transform:translateY(13px) rotateZ(45deg)}
 }
 
 @keyframes line-top-rotate-reverse {
-    0% {transform:translateY(13px) rotateZ(45deg)}
-    100% {transform:translateY(13px) rotateZ(0deg)}
+0% {transform:translateY(13px) rotateZ(45deg)}
+100% {transform:translateY(13px) rotateZ(0deg)}
 }
 
 @keyframes line-mid {
-    0% {transform:scale(1)}
-    100% {transform:scale(0)}
+0% {transform:scale(1)}
+100% {transform:scale(0)}
 }
 
 @keyframes line-mid-reverse {
-    0% {transform:scale(0)}
-    100% {transform:scale(1)}
+0% {transform:scale(0)}
+100% {transform:scale(1)}
 }
 
 @keyframes line-mid-invisible {
-    0% {transform:scale(0)}
-    100% {transform:scale(0)}
+0% {transform:scale(0)}
+100% {transform:scale(0)}
 }
 
 @keyframes line-bot {
-    0% {transform:translateY(0px)}
-    100% {transform:translateY(-13px)}
+0% {transform:translateY(0px)}
+100% {transform:translateY(-13px)}
 }
 
 @keyframes line-bot-reverse {
-    0% {transform:translateY(-13px)}
-    100% {transform:translateY(0px)}
+0% {transform:translateY(-13px)}
+100% {transform:translateY(0px)}
 }
 
 @keyframes line-bot-rotate {
-    0% {transform:translateY(-13px) rotateZ(0deg)}
-    100% {transform:translateY(-13px) rotateZ(135deg)}
+0% {transform:translateY(-13px) rotateZ(0deg)}
+100% {transform:translateY(-13px) rotateZ(135deg)}
 }
 
 @keyframes line-bot-rotate-reverse {
-    0% {transform:translateY(-13px) rotateZ(135deg)}
-    100% {transform:translateY(-13px) rotateZ(0deg)}
+0% {transform:translateY(-13px) rotateZ(135deg)}
+100% {transform:translateY(-13px) rotateZ(0deg)}
 }
 
 
 /*메뉴 생성 부분*/
 
 #wrap .menu_bar{
-    width: 40vw;
-    height: 100vh;
-    border: black  5px solid;
-    box-sizing: border-box;
-    background: #fff;
-    position: absolute;
-    z-index: 999;
-    transform: translateX(-40vw);
-    transition: .5s;
+width: 40vw;
+height: 100vh;
+border: black  5px solid;
+box-sizing: border-box;
+background: #fff;
+position: absolute;
+z-index: 999;
+transform: translateX(-40vw);
+transition: .5s;
 }
 
 #wrap .menu_bar.active {
-    transform: translateX(0)
+transform: translateX(0)
 }
 
 
@@ -150,59 +144,119 @@
 /*메뉴 선택 부분*/
 
 #menu-wrapper{
-    width: 500px;
-    height: 500px;
-    margin: -250px auto 0;
-    padding-top: 500px;
-    font-size: 90px;
-    font-family: "S-CoreDream-7ExtraBold";
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+width: 700px;
+height: 700px;
+margin: -350px auto 0;
+padding-top: 700px;
+font-size: 110px;
+font-family: "S-CoreDream-7ExtraBold";
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+
+
+#menu-wrapper a:link{
+text-decoration: none;
+}
+#menu-wrapper a:visited {
+color: black; text-decoration: none;}
+
+#menu-wrapper a{
+transition: .5s;
+color: #000;
+height: 90px;
+}
+
+#menu-wrapper a:hover {
+    font-style: oblique;
+    color: yellow;
+}
+
+#menu-wrapper a:hover span::before {
+    width: calc(100% + 25px);
+    transition: .5s width ease-out;
+}
+
+@keyframes menu-wrapper-hover {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+#menu-wrapper span {
+    align-self: flex-start;
+    position: relative;
+}
+
+#menu-wrapper span::before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #000;
+    z-index: -1;
+}
+
+
+
+
+#menu-wrapper span{
+
+height: 100px;
+align-self: flex-start;
+
+}
+
+
+
+
+
+
+
+/*반응형 관리*/
+
+
+/*화면 너비 0 ~ 2200px*/
+@media (max-width: 2200px){
+    #line-wrapper {width: 30px;}
+    .line {width: 42px; height: 7px;}
+    #menu-wrapper{
+        width: 500px;
+        height: 500px;
+        margin: -250px auto 0;
+        padding-top: 500px;
+        font-size: 90px;
+    }
 }
 
 /*화면 너비 0 ~ 1900px*/
 @media (max-width: 1900px){
     #menu-wrapper{
-        width: 400px;
-        height: 360px;
+    width: 400px;
+    height: 360px;
+    margin: -200px auto 0;
+    padding-top: 400px;
+    font-size: 60px;
+}
+
+}
+
+
+/*화면 너비 0 ~ 1280px*/
+@media (max-width: 1280px){
+    #menu-wrapper{
+        width: 300px;
+        height: 350px;
         margin: -200px auto 0;
         padding-top: 400px;
-        font-size: 60px;
+        font-size: 50px;
     }
-
-}
-
-#menu-wrapper a:link{
-    text-decoration: none;
-}
-#menu-wrapper a:visited {
-    color: black; text-decoration: none;}
-
-#menu-wrapper a{
-    transition: .5s;
-    color: #000;
-    height: 60px;
-
-}
-
-#menu-wrapper a:hover{
-    font-style: oblique;
-    color: yellow;
-    animation: menu-wrapper-hover 0.5s linear 1;
-    background-color: #000;
-}
-
-@keyframes menu-wrapper-hover{
-    0%{width: 0;}
-    100%{width: 100%;}
-}
-
-
-
-#menu-wrapper p{
-
-    height: 100px;
-    align-self: flex-start;
-
 }
