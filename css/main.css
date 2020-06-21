@@ -1,0 +1,98 @@
+#container{
+    height: 100vh;
+    background-color: #fff;
+    background-image: linear-gradient(90deg, #e0e0e0, transparent 1px),
+    linear-gradient(#e0e0e0, transparent 1px);
+    background-size: 20px 20px, 20px 20px;
+    overflow: hidden;
+
+    /* 화면 너비 0 ~ 1200px */
+    /*@media (max-width: 1220px){*/
+    /*    aside {width: 40%;}*/
+    /*    section {width: 60%;}*/
+    /*    article {width: 100%; height: 300px;}*/
+    /*}*/
+    /*!* 화면 너비 0 ~ 768px *!*/
+    /*@media (max-width: 768px){*/
+    /*    aside {width: 100%; height: 300px;}*/
+    /*    section {width: 100%; height: 300px;}*/
+    /*}*/
+    /*!* 화면 너비 0 ~ 480px *!*/
+    /*@media (max-width: 480px){*/
+    /*    header {height: 300px;}*/
+    /*    aside {height: 200px;}*/
+    /*    section {height: 200px;}*/
+
+}
+
+#contents #txt{
+    width: 100%;
+    min-height: 200px;
+    height: 35vh;
+    padding-top: 9.5vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#contents #txt .title{
+    /*min-width: 618px;*/
+    width: 30%;
+    margin: 0 auto 3.5vh;
+}
+
+#contents #txt img{
+    width: 100%;
+}
+
+#contents #txt .sub-txt{
+    width: 35.5vw;
+    height: 6vh;
+    margin: 0 auto;
+}
+
+#contents #bg_img{
+    max-height: calc(100% - 200px);
+    height: 65vh;
+    position: relative;
+    bottom: -2px;
+}
+
+#bg_img div{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+}
+
+#bg_img .img1{
+    background: url("../img/main_bg_people03.png") no-repeat;
+    background-size: contain;
+}
+
+#bg_img .img2{
+    background: url("../img/main_bg_people02.png") no-repeat;
+    background-size: contain;
+    animation: bounce 0.8s infinite linear;
+}
+
+@keyframes bounce {
+    0% {top: 0;} 50% {top: -40px;} 100% {top: 0}}
+
+
+
+#bg_img .img3{
+background: url("../img/main_bg_people01.png") no-repeat;
+background-size: contain;
+}
+
+
+#contents .btn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 9.25vh;
+    max-width: 330px;
+    width: 20%;
+    margin: 0 auto;
+    font-family: "S-CoreDream-7ExtraBold";
+}
