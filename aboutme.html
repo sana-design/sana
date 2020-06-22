@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <title>about me</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/menu_bar.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/menu_bar.js"></script>
+    <link rel="stylesheet" href="css/font-style.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.css">
 </head>
 <body>
+    <header></header>
+    <div id="container">
+        <!--메뉴 랩-->
+        <div id="wrap">
+            <div id="menu">
+                <div id="line-wrapper">
+                    <div id="line-top" class="line init top-reverse"></div>
+                    <div id="line-mid" class="line init mid-reverse"></div>
+                    <div id="line-bot" class="line init bot-reverse"></div>
+                </div>
+            </div>
 
+            <div class="menu_bar">
+                <div id="menu-wrapper">
+                    <a href="index.html"><span class="main">MAIN</span> </a>
+                    <a href="aboutme.html"><span class="about">ABOUT</span></a>
+                    <a href="#"><span class="portfolio">PORTFOLIO</span></a>
+                    <a href="#"><span class="contact">CONTACT</span></a>
+                </div>
+                <div class="sns_icon">
+                    <a href="https://www.instagram.com/flo_sh_wer/" target="_blank"><p class="insta"></p></a>
+                    <a href="http://pf.kakao.com/_qAksj/chat" target="_blank"><p class="kakao"></p></a>
+                    <a href="https://blog.naver.com/sana_design" target="_blank"><p class="blog"></p></a>
+                    <a href="https://github.com/sana-design" target="_blank"><p class="git"></p></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                </div>
+
+                <div class="swiper-slide">
+
+                </div>
+
+                <div class="swiper-slide">
+
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    <footer></footer>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+            mousewheel: true,
+        });
+    </script>
 </body>
 </html>
