@@ -206,8 +206,6 @@ line-bot-reverse .3s .3s forwards ease-out;
 }
 
 
-
-
 #menu-wrapper span{
 
 height: 100px;
@@ -217,11 +215,49 @@ align-self: flex-start;
 
 
 
+/*메뉴 sns 버튼*/
+
+.menu_bar .sns_icon{
+    width: 180px;
+    height: 20px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 6vh;
+    left: calc(50% - 90px);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.menu_bar .sns_icon p{
+    width: 20px;
+    height: 20px;
+}
+
+
+.insta {
+    background: url("../img/insta.png") no-repeat;
+    background-size: cover;
+}
+.kakao {
+    background: url("../img/kakao.png") no-repeat;
+    background-size: cover;
+}
+.blog {
+    background: url("../img/blog.png") no-repeat;
+    background-size: cover;
+}
+.git {
+    background: url("../img/git.png") no-repeat;
+    background-size: cover;
+}
 
 
 
 
-/*반응형 관리*/
+
+/*--------------------------------반응형 관리----------------------------*/
 
 
 /*화면 너비 0 ~ 2200px*/
@@ -298,4 +334,23 @@ align-self: flex-start;
         top:2vh;
     }
 
+
+    /*sns 아이콘*/
+    .menu_bar .sns_icon{
+        width: 40px;
+        height: 200px;
+        /*background: #333;*/
+        position: absolute;
+        margin: 0 auto;
+        bottom: calc(50% - 100px);
+        right: -50vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .menu_bar .sns_icon p{
+        width: 30px;
+        height: 30px;
+    }
 }
