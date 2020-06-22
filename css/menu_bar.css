@@ -337,19 +337,19 @@ align-self: flex-start;
 
     /*sns 아이콘*/
     .menu_bar .sns_icon{
-        width: 40px;
-        height: 200px;
+        width: 50px;
+        height: 250px;
         position: absolute;
         margin: 0 auto;
-        bottom: calc(50% - 100px);
-        right: -50vw;
+        bottom: calc(50% - 125px);
+        right: -45vw;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
     }
 
     .menu_bar .sns_icon p{
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
     }
 }
