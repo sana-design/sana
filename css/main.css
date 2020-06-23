@@ -160,17 +160,18 @@ background-size: contain;
     #bg_img div{
         width: 100vw;
         height: 100vh;
+        overflow: hidden;
         position: absolute;
         bottom: 0;
 }
 
     #bg_img .img1{
-        background: url("../img/mo_main_bg_03.png") no-repeat;
+        background: url("../img/mo_main_bg_03.png") top center no-repeat;
         background-size: cover;
     }
 
     #bg_img .img2{
-        background: url("../img/mo_main_bg_02.png") no-repeat;
+        background: url("../img/mo_main_bg_02.png") top center no-repeat;
         background-size: cover;
         animation: bounce 0.8s infinite linear;
     }
@@ -181,7 +182,7 @@ background-size: contain;
 
 
     #bg_img .img3{
-        background: url("../img/mo_main_bg_01.png") no-repeat;
+        background: url("../img/mo_main_bg_01.png") top center no-repeat;
         background-size: cover;
     }
 
