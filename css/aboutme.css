@@ -18,6 +18,8 @@
 }
 
 
+
+/*-------------------------------1page-------------------------------*/
 #square_wrap{
     max-width: 1728px;
     width: 90%;
@@ -197,16 +199,145 @@
 
 
 
+/*-------------------------------2page-------------------------------*/
+
+/*left box*/
+#square_wrap2{
+    position: relative;
+    /*background: #eee;*/
+    max-width: 1780px;
+    width: 93%;
+    max-height: 890px;
+    height: 83%;
+    margin: 0 auto;
+    top: calc(50% - 40%);
+}
+
+
+#box_wrap, #box_wrap2{
+    width: 49.5%;
+    height: 100%;
+    position: absolute;
+    /*background: #000;*/
+}
+
+#box_wrap .square3, #box_wrap2 .square3{
+    width: 96.5%;
+    position: absolute;
+}
+
+#box_wrap .txtBox span{
+    position: absolute;
+    z-index: 999;
+}
+
+#box_wrap .txtBox span:nth-of-type(1){
+    font-family: 'S-CoreDream-7ExtraBold';
+    font-size: 80px;
+    top: 5%;
+    left: 5%;
+    line-height: 1.2;
+}
+
+#box_wrap .txtBox span:nth-of-type(2){
+    font-family: 'S-CoreDream-3Light';
+    font-size: 30px;
+    line-height: 1.4;
+    left: 5%;
+    top: 30%;
+
+}
+
+
+#box_wrap .txtBox #square13{
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+}
 
 
 
+/*right box*/
+
+#box_wrap2 {
+    right: 0;
+}
+
+#square15{
+    z-index: 99;
+    left: 1%;
+}
+
+#square16{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#box_wrap2 .txtBox2 span{
+    position: absolute;
+    z-index: 999;
+}
+
+#box_wrap2 .txtBox2>span:nth-of-type(1){
+    font-family: 'S-CoreDream-7ExtraBold';
+    font-size: 80px;
+    top: 5%;
+    left: 5%;
+    line-height: 1.2;
+}
 
 
+/*file Box*/
 
 
+#box_wrap2 .txtBox2{
+    width: 100%;
+    height: 100%;
+}
 
+#fileBox{
+    width: 82%;
+    height: 70%;
+    /*background: #eee;*/
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: calc(50% - 23%);
+}
 
+#fileBox p{
+    width: 29%;
+    height: 42%;
+    background: url("../img/ab_17_file-b.png") no-repeat;
+    background-size: contain;
+    position: relative;
+    text-align : center;
+    line-height: 1;
+}
 
+#fileBox p:hover {
+    background: url("../img/ab_17_file-p.png") no-repeat;
+    background-size: contain;
+}
+
+#fileBox p span{
+    font-family: 'S-CoreDream-9Black';
+    font-size: 80px;
+    position: absolute;
+    left:0;
+    right: 0;
+    top: calc(50% - 20%);
+}
+
+#fileBox p .txt-html{
+    font-size: 42px;
+}
 
 
 
