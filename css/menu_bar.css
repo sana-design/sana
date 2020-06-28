@@ -16,6 +16,7 @@
     position:relative;
     top:40px;
     left:47px;
+
 }
 
 /* 추가된 부분 */
@@ -31,6 +32,7 @@
     height:7px;
     border-radius:2px;
     position:relative;
+
 }
 
 
@@ -332,7 +334,10 @@ align-self: flex-start;
 
     #line-wrapper {
         top:2vh;
+
     }
+
+
 
 
     /*sns 아이콘*/

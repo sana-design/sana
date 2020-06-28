@@ -18,6 +18,11 @@
 }
 
 
+.mo_ab{
+    display: none;
+}
+
+
 
 /*-------------------------------1page-------------------------------*/
 #square_wrap{
@@ -321,7 +326,9 @@
     line-height: 1;
 }
 
-#fileBox p:hover {
+
+
+#fileBox p:active {
     background: url("../img/ab_17_file-p.png") no-repeat;
     background-size: contain;
 }
@@ -333,6 +340,12 @@
     left:0;
     right: 0;
     top: calc(50% - 20%);
+    cursor:pointer
+}
+
+#fileBox p span.active {
+    font-size: 60px;
+    top: calc(50% - 15%);
 }
 
 #fileBox p .txt-html{
@@ -341,5 +354,243 @@
 
 
 
+/*반응형 적용*/
 
 
+/*화면 너비 0 ~ 1900px*/
+@media (max-width: 1900px){
+    #square_wrap{
+        width: 1500px;
+        height: 650px;
+        margin: 0 auto;
+        top: calc(50% - 325px);
+        position: relative;
+    }
+
+    /*----------------1page----------------*/
+    #square1{
+        left: 9%;
+        top: 18%;
+        z-index: 5;
+    }
+
+    #square2{
+        left: 7%;
+        top: 15%;
+        z-index: 6;
+    }
+
+    #square3{
+        left: 5%;
+        top: 12%;
+        z-index: 7;
+    }
+
+    #square4{
+        left: 3%;
+        top: 9%;
+        z-index: 8;
+    }
+
+    #square5{
+        left: 1%;
+        top: 6%;
+        z-index: 9;
+    }
+
+    #square10{
+        bottom: 0;
+    }
+
+    #introBox3{
+        bottom: 7%;
+    }
+
+    #square12{
+        right: 1.5%;
+        bottom: 3%;
+        z-index: 2;
+    }
+
+    #introBox1 span{
+        font-size: 7.5em;
+    }
+
+    #introBox2 span{
+        font-size: 3.3em;
+    }
+
+
+    #introBox3 span{
+        font-size:3.3em;
+    }
+
+    /*------------------2page------------------*/
+    #square_wrap2{
+        width: 1400px;
+        height: 550px;
+        margin: 0 auto;
+        top: calc(50% - 350px);
+        position: relative;
+    }
+    #box_wrap .txtBox #square13{
+        top: 3%;
+    }
+
+    #square16{
+        top: 3%;
+    }
+
+    #box_wrap .txtBox span:nth-of-type(1){
+        font-size: 70px;
+    }
+
+    #box_wrap .txtBox span:nth-of-type(2){
+        font-size: 25px;
+        top: 34%;
+
+    }
+
+    #box_wrap2 .txtBox2>span:nth-of-type(1){
+        font-size: 70px;
+    }
+
+    #fileBox{
+        top: calc(50% - 10%);
+    }
+
+
+    #fileBox p span{
+        font-size: 4em;
+        position: absolute;
+        left:0;
+        right: 0;
+        margin-left: -22px;
+        top: calc(50% - 18%);
+    }
+
+    #fileBox p span.active {
+        font-size: 2.5em;
+        top: calc(50% - 8%);
+    }
+
+    #fileBox p .txt-html{
+        font-size: 1.8em;
+    }
+}
+
+
+
+/*화면 너비 0 ~ 1499px*/
+@media (max-width: 1499px){
+    #square_wrap{
+        width: 1100px;
+        height: 500px;
+        margin: 0 auto;
+        top: calc(50% - 250px);
+        position: relative;
+    }
+
+
+    #introBox1 span{
+        font-size: 6em;
+    }
+
+    #introBox2 span{
+        font-size: 2.35em;
+    }
+
+
+    #introBox3 span{
+        font-size: 2.35em;
+    }
+
+/*-------------------2page------------------*/
+    #square_wrap2{
+        width: 1100px;
+        height: 500px;
+        margin: 0 auto;
+        top: calc(50% - 250px);
+        position: relative;
+    }
+    #box_wrap .txtBox #square13{
+        top: 3%;
+    }
+
+    #square16{
+        top: 3%;
+    }
+
+    #box_wrap .txtBox span:nth-of-type(1){
+        font-size: 3.5em;
+    }
+
+    #box_wrap .txtBox span:nth-of-type(2){
+        font-size: 1.2em;
+        top: 34%;
+
+    }
+
+    #box_wrap2 .txtBox2>span:nth-of-type(1){
+        font-size: 3.5em;
+    }
+
+    #fileBox{
+        top: calc(50% - 18%);
+    }
+
+
+    #fileBox p span{
+        font-size: 3.5em;
+        margin-right: -20px;
+        top: calc(50% - 18%);
+    }
+
+    #fileBox p span.active {
+        font-size: 2.2em;
+        top: calc(50% - 11%);
+    }
+
+    #fileBox p .txt-html{
+        font-size: 1.8em;
+    }
+
+}
+
+
+
+/*화면 너비 0 ~ 1200px*/
+@media (max-width: 1200px){
+    .swiper-container{
+        display: none;
+    }
+
+
+    #mo_wrap{
+        width: 100vw;
+        height: 100vh;
+        overflow-y:scroll;
+    }
+
+    .mo_ab{
+        display: block;
+        width: 100%;
+
+    }
+
+
+    #mo_img{
+        width: 100%;
+        max-height: 4256px;
+        position: absolute;
+        background: url("../img/mo_ab.png") no-repeat;
+        background-size: contain;
+        overflow-y:scroll;
+
+    }
+
+    .line{
+        background: #333;
+    }
+
+}
