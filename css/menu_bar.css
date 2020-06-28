@@ -1,21 +1,24 @@
 
 
 #menu {
-    width:50px;
-    height:35px;
-    position:absolute;
-    top: 1vh;
-    left: 1vw;
+    cursor:pointer;
+    width:70px;
+    height:70px;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 1px 1px 5px #dedede;
+    border-radius: 100px;
+    position:relative;
+    top: 3em;
+    left: 3em;
     z-index: 9999;
 }
 
 #line-wrapper {
-    cursor:pointer;
-    width:50px;
-    height:35px;
-    position:relative;
-    top:40px;
-    left:47px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
 }
 
@@ -26,12 +29,10 @@
 
 .line {
     background:#000;
-    margin-top:6px;
-    margin-bottom:6px;
-    width: 56px;
-    height:7px;
     border-radius:2px;
-    position:relative;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
 
 }
 
@@ -268,7 +269,7 @@ align-self: flex-start;
 
 /*화면 너비 0 ~ 2200px*/
 @media (max-width: 2200px){
-    #line-wrapper {width: 50px;}
+    /*#line-wrapper {width: 50px;}*/
     .line {width: 42px; height: 7px;}
     #menu-wrapper{
         width: 500px;
