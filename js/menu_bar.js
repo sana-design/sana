@@ -1,6 +1,6 @@
 
 $(function() {
-    $('#line-wrapper').click(function(){
+    $('#menu').click(function(){
         $('.line').removeClass('init');
         $('#line-top').toggleClass('line-top').toggleClass('top-reverse');
         $('#line-mid').toggleClass('line-mid').toggleClass('mid-reverse');
