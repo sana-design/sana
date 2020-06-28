@@ -1,11 +1,11 @@
 
 
 #menu {
-    width:30px;
+    width:50px;
     height:35px;
     position:absolute;
-    top: 5vh;
-    left: 5vw;
+    top: 1vh;
+    left: 1vw;
     z-index: 9999;
 }
 
@@ -124,13 +124,17 @@ line-bot-reverse .3s .3s forwards ease-out;
 
 /*메뉴 생성 부분*/
 
+#wrap #menu{
+    position: fixed;
+}
+
 #wrap .menu_bar{
     width: 40vw;
     height: 100vh;
     border: black  5px solid;
     box-sizing: border-box;
     background: #fff;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     transform: translateX(-40vw);
     transition: .5s;
@@ -264,7 +268,7 @@ align-self: flex-start;
 
 /*화면 너비 0 ~ 2200px*/
 @media (max-width: 2200px){
-    #line-wrapper {width: 30px;}
+    #line-wrapper {width: 50px;}
     .line {width: 42px; height: 7px;}
     #menu-wrapper{
         width: 500px;
@@ -342,11 +346,11 @@ align-self: flex-start;
 
     /*sns 아이콘*/
     .menu_bar .sns_icon{
-        width: 50px;
-        height: 250px;
+        width: 30px;
+        height: 180px;
         position: absolute;
         margin: 0 auto;
-        bottom: calc(50% - 125px);
+        bottom: calc(50% - 90px);
         right: -45vw;
         display: flex;
         justify-content: space-between;
@@ -354,7 +358,7 @@ align-self: flex-start;
     }
 
     .menu_bar .sns_icon p{
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
     }
 }
