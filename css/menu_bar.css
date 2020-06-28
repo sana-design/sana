@@ -105,22 +105,22 @@ line-bot-reverse .3s .3s forwards ease-out;
 
 @keyframes line-bot {
 0% {transform:translateY(0px)}
-100% {transform:translateY(-14px)}
+100% {transform:translateY(-14.5px)}
 }
 
 @keyframes line-bot-reverse {
-0% {transform:translateY(-14px)}
+0% {transform:translateY(-14.5px)}
 100% {transform:translateY(0px)}
 }
 
 @keyframes line-bot-rotate {
-0% {transform:translateY(-14px) rotateZ(0deg)}
-100% {transform:translateY(-14px) rotateZ(135deg)}
+0% {transform:translateY(-14.5px) rotateZ(0deg)}
+100% {transform:translateY(-14.5px) rotateZ(135deg)}
 }
 
 @keyframes line-bot-rotate-reverse {
-0% {transform:translateY(-14px) rotateZ(135deg)}
-100% {transform:translateY(-14px) rotateZ(0deg)}
+0% {transform:translateY(-14.5px) rotateZ(135deg)}
+100% {transform:translateY(-14.5px) rotateZ(0deg)}
 }
 
 
@@ -339,7 +339,7 @@ align-self: flex-start;
     }
 
     #line-wrapper {
-        top:2vh;
+        /*top:1vh;*/
 
     }
 

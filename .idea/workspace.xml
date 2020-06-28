@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="58bab261-ea28-47a1-95bc-030fc5914150" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/css/menu_bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/menu_bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/menu_bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/menu_bar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,8 +88,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/menu_bar.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="48">
-                  <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+                <state relative-caret-position="189">
+                  <caret line="122" column="32" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
+                  <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
+                  <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+                  <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+                  <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+                  <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -254,12 +258,12 @@
       <workItem from="1575681717283" duration="609000" />
       <workItem from="1591509589746" duration="6360000" />
       <workItem from="1591768439540" duration="8136000" />
-      <workItem from="1592710378767" duration="91862000" />
+      <workItem from="1592710378767" duration="92143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135964000" />
+    <option name="totallyTimeSpent" value="136245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -494,8 +498,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/menu_bar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="189">
+          <caret line="122" column="32" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
+          <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
+          <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+          <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+          <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+          <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
         </state>
       </provider>
     </entry>
