@@ -1,0 +1,52 @@
+#wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#menu {
+    cursor:pointer;
+    width:70px;
+    height:70px;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 1px 1px 5px #dedede;
+    border-radius: 100px;
+    position:fixed;
+    right: 3em;
+    top: 3em;
+    z-index: 9999;
+}
+
+#line-wrapper {
+
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.init {
+    animation:none !important;
+}
+
+.line {
+    background:#000;
+    border-radius:2px;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    width: 42px;
+    height: 7px;
+}
+
+
+#line-top {
+    transform:translateY(13.5px) rotateZ(135deg);
+}
+
+#line-bot {
+    transform:translateY(-13.5px) rotateZ(-135deg);
+}
+

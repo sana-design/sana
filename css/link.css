@@ -1,0 +1,33 @@
+body {
+    background-color: #fff;
+    background-image: linear-gradient(90deg, #e0e0e0, transparent 1px),
+    linear-gradient(#e0e0e0, transparent 1px);
+    background-size: 20px 20px, 20px 20px;
+}
+
+
+#image{
+    max-width: 1200px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#image span{
+    text-align: center;
+    width: 500px;
+    /*height: 200px;*/
+    background: #fff000;
+    border: solid 6px #000;
+    margin: 50px auto;
+}
+
+#image img{
+    margin: 0 auto;
+    max-width: 100%;
+}
